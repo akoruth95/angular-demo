@@ -1,3 +1,4 @@
+import { AuthService } from './user/auth.service';
 import { Error404Component } from './errors/404.component';
 import {  } from './events/create-event.component';
 import { appRoutes } from './routes';
@@ -37,6 +38,7 @@ import { RouterModule } from '@angular/router';
     ToastrService,
     EventRouteActivator,
     EventListResolver,
+    AuthService,
     {
       provide: 'canDeactivateCreateEvent',
       useValue: checkDirtyState
